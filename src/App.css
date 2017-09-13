@@ -1,0 +1,311 @@
+/* transition: all .5s linear;
+transform: rotateY(0deg);
+transform-origin: 540px 0 564px;
+transform-style: preserve-3d;
+} */
+
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+
+.reference {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+  opacity: .3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  position: fixed;
+  background-color: rgba(212, 71, 99, 0.4);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  z-index: 1;
+}
+
+.rowOne {
+  width: 100%;
+  display: flex;
+}
+.hearts {
+  background: yellow;
+  padding-top: 1.4px;
+  left: 8%;
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: relative;
+
+
+}
+.heart {
+  background: red;
+  width: 40px;
+  height: 35px;
+  margin-bottom: 4px;
+  margin-right: 1.4px;
+  
+}
+
+
+.redButton {
+  background-color: red;
+  color: white;
+  width: 66px;
+  height: 66px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 12%;
+
+}
+
+.greenButton {
+  background-color: green;
+  color: white;
+  width: 85px;
+  height: 85px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 4%;
+}
+
+.blueButton {
+  background-color: blue;
+  color: white;
+  width: 85px;
+  height: 85px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 3%;
+}
+
+.arrowButtons {
+  background-color: white;
+  position: relative;
+  margin-left: 3%
+}
+
+.leftYellowArrow {
+  background-color: yellow;
+  color: white;
+  width: 85px;
+  height: 85px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  top: 2px;
+  left: 6px;
+  display: inline-block
+
+}
+
+.downYellowArrow {
+  background-color: yellow;
+  color: white;
+  width: 85px;
+  height: 85px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  top: 48px;
+  left: 5px;
+  display: inline-block
+}
+
+.rightYellowArrow {
+  background-color: yellow;
+  color: white;
+  width: 85px;
+  height: 85px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+  top: 2px;
+  right: -5px;
+  display: inline-block
+}
+
+.magicMeter {
+  background-color: green;
+  z-index: 1;
+  width: 32%;
+  height: 35px;
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 5px;
+  top: 12%;
+  left: 7.5%;
+}
+
+.left {
+  background-color: orangered;
+  width: 11.3%;
+}
+
+.leftZArrow {
+  background: red;
+  display: inline-block;
+  height: 60px;
+  left: 155px;
+  top: 295px;
+  position: fixed;
+  width: 30px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: red;
+}
+.leftZArrow:before {
+  border-right: 30px solid red;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  left: -30px;
+  width: 0;
+}
+
+.center {
+  background-color: blue;
+  margin-top: 4.2%;
+  padding: 10px;
+  height: 83%;
+  width: 77.4%;
+  border-width: 77px 95px 40px 95px;
+  border-color: black;
+  border-style: outset;
+  z-index: -1;
+
+}
+
+.center > div { 
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-column-gap: 15px;
+  grid-row-gap: 2px;
+}
+
+.item {
+  background-color: red;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+}
+.item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  
+}
+
+.item::before:hover {
+  border: 10px dashed white;
+}
+
+.item, 
+.item::before {
+  height: 86%;
+  width: 86%;
+}
+
+.map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  background-color: purple;
+  width: 11.3%;
+}
+
+.bottom {
+  background-color: yellow;
+  position: absolute;
+  bottom: 0;
+  width: 77.4%;
+  height: 8%;
+  margin: auto;
+  left: 11.3%;
+}
+
+
+.rupees {
+  position: fixed;
+  background-color: blue;
+  height: 10%;
+  width: 15%;
+  left: 8%;
+  display: flex;
+}
+
+.rupee {
+  height: 100%;
+}
+
+.rupeeCount {
+  font-size: 50px;
+  padding-left: 20px;
+  color: white;
+}
+
+.selectText {
+  position: fixed;
+  background-color: green;
+  height: 10%;
+  width: 40%;
+  left: 30%;
+  bottom: 1%;
+  border-style: outset;
+  border-width: 10px;
+  border-color: green;
+}
