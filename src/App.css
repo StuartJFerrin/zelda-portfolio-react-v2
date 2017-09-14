@@ -1,5 +1,5 @@
 /* transition: all .5s linear;
-transform: rotateY(0deg);
+transform: rotateY(90deg);
 transform-origin: 540px 0 564px;
 transform-style: preserve-3d;
 } */
@@ -83,6 +83,11 @@ body * {
 .redButton {
   background-color: red;
   color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 66px;
   width: 66px;
   height: 66px;
   -moz-border-radius: 50px;
@@ -90,12 +95,20 @@ body * {
   border-radius: 50px;
   position: relative;
   margin-left: 12%;
+  border-style: outset;
+  border-color: red;
+  border-width: 5px;
 
 }
 
 .greenButton {
   background-color: green;
   color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
   width: 85px;
   height: 85px;
   -moz-border-radius: 50px;
@@ -103,11 +116,19 @@ body * {
   border-radius: 50px;
   position: relative;
   margin-left: 4%;
+  border-style: outset;
+  border-color: green;
+  border-width: 5px;
 }
 
 .blueButton {
   background-color: blue;
   color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
   width: 85px;
   height: 85px;
   -moz-border-radius: 50px;
@@ -115,6 +136,9 @@ body * {
   border-radius: 50px;
   position: relative;
   margin-left: 3%;
+  border-style: outset;
+  border-color: blue;
+  border-width: 5px;
 }
 
 .arrowButtons {
@@ -125,7 +149,6 @@ body * {
 
 .leftYellowArrow {
   background-color: yellow;
-  color: white;
   width: 85px;
   height: 85px;
   -moz-border-radius: 50px;
@@ -134,13 +157,28 @@ body * {
   position: relative;
   top: 2px;
   left: 6px;
-  display: inline-block
+  display: inline-block;
+  border-style: outset;
+  border-color: yellow;
+  border-width: 5px;
+}
 
+.arrow-left {
+  z-index: 2;
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid yellow;
+  border-style: inset;
+  margin: 0 auto;
+  top: 10px;
+  left: 10px;
+  position: relative;
 }
 
 .downYellowArrow {
   background-color: yellow;
-  color: white;
   width: 85px;
   height: 85px;
   -moz-border-radius: 50px;
@@ -149,12 +187,29 @@ body * {
   position: relative;
   top: 48px;
   left: 5px;
-  display: inline-block
+  display: inline-block;
+  border-style: outset;
+  border-color: yellow;
+  border-width: 5px;
+  
+}
+
+
+.arrowDown {
+  z-index: 2;
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid yellow;
+  border-style: inset;
+  margin: 0 auto;
+  top: 25px;
+  position: relative;
 }
 
 .rightYellowArrow {
   background-color: yellow;
-  color: white;
   width: 85px;
   height: 85px;
   -moz-border-radius: 50px;
@@ -163,7 +218,24 @@ body * {
   position: relative;
   top: 2px;
   right: -5px;
-  display: inline-block
+  display: inline-block;
+  border-style: outset;
+  border-color: yellow;
+  border-width: 5px;
+}
+
+.arrowRight {
+  z-index: 2;
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid yellow;
+  border-style: inset;
+  margin: 0 auto;
+  top: 10px;
+  left: 10px;
+  position: relative;
 }
 
 .magicMeter {
@@ -201,9 +273,9 @@ body * {
   border-bottom: 30px solid transparent;
   content: "";
   height: 0;
-  left: 0;
+  top: -5px;
   position: absolute;
-  left: -30px;
+  left: -35px;
   width: 0;
 }
 
@@ -227,6 +299,15 @@ body * {
   grid-template-rows: 1fr 1fr 1fr 1fr ;
   grid-column-gap: 15px;
   grid-row-gap: 2px;
+}
+
+.centerRotate {
+  display: flex;
+  overflow: hidden;
+}
+
+.rotateView {
+  width: 77.4%;
 }
 
 .item {
@@ -268,9 +349,34 @@ body * {
   width: 11.3%;
 }
 
+.rightRArrow {
+  background: red;
+  display: inline-block;
+  height: 60px;
+  right: 155px;
+  top: 295px;
+  position: fixed;
+  width: 30px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: red;
+}
+.rightRArrow:before {
+  border-left: 30px solid red;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  content: "";
+  height: 0;
+  top: -5px;
+  left: 25px;;
+  position: absolute;
+  right: -30px;
+  width: 0;
+}
+
 .bottom {
   background-color: yellow;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 77.4%;
   height: 8%;

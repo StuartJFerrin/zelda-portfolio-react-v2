@@ -6,8 +6,10 @@ class InventoryView extends Component {
         const inventoryItems = Array(24)
             .fill(undefined)
             .map(() => (
+                <div className='rotateView'>
                 <div className="item">
                     <img src={triforceImg} alt="triforce" />
+                </div>
                 </div>
             ));
         return (

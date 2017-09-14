@@ -27,8 +27,10 @@ class App extends Component {
           <Turntable />
 
 
-          <div className="right"></div>
-          <div className="rightZArrow" />
+          <div className="right">
+          </div>
+        </div>
+          <div className="rightRArrow" />
         <div className="bottom">
           <div className="rupees">
             <img className="rupee" src={rupee} alt="rupee" />
@@ -36,7 +38,6 @@ class App extends Component {
             </div>
           <div className="selectText"></div>
           </div>
-        </div>
       </div>
     );
   }

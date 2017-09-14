@@ -8,7 +8,7 @@ class Controls extends Component {
         return (
             <div>
                 <div className="top">
-                     <div className="hearts">
+                    <div className="hearts">
                         {hearts}
                     </div>
                     <div className="redButton">Return</div>
@@ -16,9 +16,15 @@ class Controls extends Component {
                     <div className="blueButton">Decide</div>
 
                     <div className="arrowButtons">
-                        <div className="leftYellowArrow"></div>
-                        <div className="downYellowArrow"></div>
-                        <div className="rightYellowArrow"></div>
+                        <div className="leftYellowArrow">
+                            <div className="arrowLeft"></div>
+                        </div>
+                        <div className="downYellowArrow">
+                            <div className="arrowDown"></div>
+                        </div>
+                        <div className="rightYellowArrow">
+                        <div className="arrowRight"></div>
+                        </div>
                     </div>
                 </div>
                 <div className="magicMeter">Meter</div>
