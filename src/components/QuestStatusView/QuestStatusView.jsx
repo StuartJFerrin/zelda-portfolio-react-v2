@@ -4,7 +4,7 @@ import triforceImg from '../../reference/Triforce.png';
 class QuestStatusView extends Component {
     render() {
         return (
-            <div className='rotateView'>
+            <div className="quest">
                 hello
             </div>
         )

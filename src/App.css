@@ -1,8 +1,7 @@
 /* transition: all .5s linear;
 transform: rotateY(90deg);
 transform-origin: 540px 0 564px;
-transform-style: preserve-3d;
-} */
+transform-style: preserve-3d; */
 
 html,
 body,
@@ -10,6 +9,7 @@ body,
 .App {
   width: 100%;
   height: 100%;
+  
 }
 
 
@@ -24,11 +24,13 @@ body,
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transform: translatez(-50vh);
 }
 
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 body * {
@@ -52,6 +54,7 @@ body * {
   flex-direction: row;
   width: 100%;
   z-index: 1;
+  top: 20px;
 }
 
 .rowOne {
@@ -61,8 +64,8 @@ body * {
 .hearts {
   background: yellow;
   padding-top: 1.4px;
-  left: 8%;
-  width: 32%;
+  left: 110px;
+  width: 430px;;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -84,7 +87,7 @@ body * {
   background-color: red;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 36px;
   text-align: center;
   vertical-align: middle;
   line-height: 66px;
@@ -94,7 +97,7 @@ body * {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   position: relative;
-  margin-left: 12%;
+  left: 160px;
   border-style: outset;
   border-color: red;
   border-width: 5px;
@@ -105,7 +108,7 @@ body * {
   background-color: green;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 36px;
   text-align: center;
   vertical-align: middle;
   line-height: 85px;
@@ -115,7 +118,7 @@ body * {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   position: relative;
-  margin-left: 4%;
+  left: 230px;
   border-style: outset;
   border-color: green;
   border-width: 5px;
@@ -125,7 +128,7 @@ body * {
   background-color: blue;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 36px;
   text-align: center;
   vertical-align: middle;
   line-height: 85px;
@@ -135,7 +138,7 @@ body * {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   position: relative;
-  margin-left: 3%;
+  left: 270px;
   border-style: outset;
   border-color: blue;
   border-width: 5px;
@@ -144,7 +147,7 @@ body * {
 .arrowButtons {
   background-color: white;
   position: relative;
-  margin-left: 3%
+  left: 310px
 }
 
 .leftYellowArrow {
@@ -241,18 +244,13 @@ body * {
 .magicMeter {
   background-color: green;
   z-index: 1;
-  width: 32%;
+  width: 435px;
   height: 35px;
   position: absolute;
   border: 5px solid white;
   border-radius: 5px;
-  top: 12%;
-  left: 7.5%;
-}
-
-.left {
-  background-color: orangered;
-  width: 11.3%;
+  top:100px;
+  left: 103px;;
 }
 
 .leftZArrow {
@@ -280,20 +278,25 @@ body * {
 }
 
 .center {
+  perspective: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.center > .center-box {
+  transition: all .5s linear;
+  transform-style: preserve-3d;
+}
+.inventory {
   background-color: blue;
-  margin-top: 4.2%;
   padding: 10px;
-  height: 83%;
-  width: 77.4%;
+  height: 528px;
+  width: 1060px;
   border-width: 77px 95px 40px 95px;
   border-color: black;
   border-style: outset;
-  z-index: -1;
-
-}
-
-.center > div { 
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr 1fr 1fr ;
@@ -301,26 +304,39 @@ body * {
   grid-row-gap: 2px;
 }
 
-.centerRotate {
-  display: flex;
-  overflow: hidden;
+.equipment {
+  background-color: blue;
+  padding: 10px;
+  height: 528px;;
+  width: 1060px;
+  border-width: 77px 40px 40px 40px;
+  border-color: green;;
+  border-style: outset;
+  display: grid;
+  padding: 20px 20px 20px 0;
+  grid-template-columns: 1fr 380px 1fr 1fr 1fr ;
+  grid-template-rows: 25% 25% 25% 25% ;
+  grid-column-gap: 15px;
+  grid-row-gap: 2px;
 }
 
-.rotateView {
-  width: 77.4%;
+.linkEquipped {
+  background: yellow;
+  grid-row-end: span 4;
 }
 
-.item {
+.equipmentItem {
   background-color: red;
   display: inline-block;
   margin: 0 auto;
   position: relative;
 }
 
-.item img {
-  width: 100%;
+.equipmentItem img {
+  width: 60%;
 }
-.item::before {
+
+.equipmentItem::before {
   content: "";
   display: block;
   position: absolute;
@@ -328,26 +344,51 @@ body * {
   
 }
 
-.item::before:hover {
+.inventoryItem {
+  background-color: red;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inventoryItem img {
+  width: 100%;
+}
+.inventoryItem::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  
+}
+
+.inventoryItem::before:hover {
   border: 10px dashed white;
 }
 
-.item, 
-.item::before {
+.inventoryItem, 
+.inventoryItem::before {
   height: 86%;
   width: 86%;
 }
 
 .map {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  background-color: blue;
+  height: 528px;
+  width: 1060px;
+  border-width: 77px 40px 40px 40px;
+  border-color: red;
+  border-style: outset;
 }
 
-.right {
-  background-color: purple;
-  width: 11.3%;
+.quest {
+  background-color: brown;
+  height: 528px;
+  width: 1060px;
+
 }
+
+
 
 .rightRArrow {
   background: red;
@@ -377,20 +418,20 @@ body * {
 .bottom {
   background-color: yellow;
   position: fixed;
-  bottom: 0;
-  width: 77.4%;
-  height: 8%;
+  bottom: 20px;
+  width: 1058px;
+  height: 53px;;
   margin: auto;
-  left: 11.3%;
+  left: 154px;;
 }
 
 
 .rupees {
   position: fixed;
   background-color: blue;
-  height: 10%;
-  width: 15%;
-  left: 8%;
+  height: 53px;
+  width: 180px;;
+  left: 112px;
   display: flex;
 }
 
@@ -407,10 +448,10 @@ body * {
 .selectText {
   position: fixed;
   background-color: green;
-  height: 10%;
-  width: 40%;
-  left: 30%;
-  bottom: 1%;
+  height: 70px;
+  width: 545px;;
+  left: 412px;
+  bottom: 20px;
   border-style: outset;
   border-width: 10px;
   border-color: green;

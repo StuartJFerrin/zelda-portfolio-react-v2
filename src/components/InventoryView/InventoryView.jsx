@@ -3,18 +3,80 @@ import triforceImg from '../../reference/Triforce.png';
 
 class InventoryView extends Component {
     render() {
-        const inventoryItems = Array(24)
-            .fill(undefined)
-            .map(() => (
-                <div className='rotateView'>
-                <div className="item">
+        return (
+            <div className="inventory">
+                 <div className="inventoryItem">
                     <img src={triforceImg} alt="triforce" />
                 </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
                 </div>
-            ));
-        return (
-            <div>
-                {inventoryItems}
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
+                <div className="inventoryItem">
+                    <img src={triforceImg} alt="triforce" />
+                </div>
             </div>
         )
     }

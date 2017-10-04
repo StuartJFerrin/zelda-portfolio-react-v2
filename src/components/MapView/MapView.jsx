@@ -5,7 +5,7 @@ class MapView extends Component {
     render() {
         return (
             <div>
-                <img clasName="map" src={MapImg} alt="map" />
+                <img className="map" src={MapImg} alt="map" />
             </div>
         )
     }
