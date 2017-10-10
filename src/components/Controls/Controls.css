@@ -1,0 +1,206 @@
+
+.top {
+    position: fixed;
+    background-color: rgba(212, 71, 99, 0.4);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1;
+    top: 20px;
+  }
+  
+  .rowOne {
+    width: 100%;
+    display: flex;
+  }
+  .hearts {
+    background: yellow;
+    padding-top: 1.4px;
+    left: 110px;
+    width: 430px;;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+  
+  
+  }
+  .heart {
+    background: red;
+    width: 40px;
+    height: 35px;
+    margin-bottom: 4px;
+    margin-right: 1.4px;
+    
+  }
+  
+  
+  .redButton {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 66px;
+    width: 66px;
+    height: 66px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    left: 160px;
+    border-style: outset;
+    border-color: red;
+    border-width: 5px;
+  
+  }
+  
+  .greenButton {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 85px;
+    width: 85px;
+    height: 85px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    left: 230px;
+    border-style: outset;
+    border-color: green;
+    border-width: 5px;
+  }
+  
+  .blueButton {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 85px;
+    width: 85px;
+    height: 85px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    left: 270px;
+    border-style: outset;
+    border-color: blue;
+    border-width: 5px;
+  }
+  
+  .arrowButtons {
+    background-color: white;
+    position: relative;
+    left: 310px
+  }
+  
+  .leftYellowArrow {
+    background-color: yellow;
+    width: 85px;
+    height: 85px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: 2px;
+    left: 6px;
+    display: inline-block;
+    border-style: outset;
+    border-color: yellow;
+    border-width: 5px;
+  }
+  
+  .arrow-left {
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid yellow;
+    border-style: inset;
+    margin: 0 auto;
+    top: 10px;
+    left: 10px;
+    position: relative;
+  }
+  
+  .downYellowArrow {
+    background-color: yellow;
+    width: 85px;
+    height: 85px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: 48px;
+    left: 5px;
+    display: inline-block;
+    border-style: outset;
+    border-color: yellow;
+    border-width: 5px;
+    
+  }
+  
+  
+  .arrowDown {
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid yellow;
+    border-style: inset;
+    margin: 0 auto;
+    top: 25px;
+    position: relative;
+  }
+  
+  .rightYellowArrow {
+    background-color: yellow;
+    width: 85px;
+    height: 85px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: 2px;
+    right: -5px;
+    display: inline-block;
+    border-style: outset;
+    border-color: yellow;
+    border-width: 5px;
+  }
+  
+  .arrowRight {
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid yellow;
+    border-style: inset;
+    margin: 0 auto;
+    top: 10px;
+    left: 10px;
+    position: relative;
+  }
+  
+  .magicMeter {
+    background-color: green;
+    z-index: 1;
+    width: 435px;
+    height: 35px;
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 5px;
+    top:100px;
+    left: 103px;;
+  }

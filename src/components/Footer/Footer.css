@@ -1,0 +1,41 @@
+.bottom {
+    background-color: yellow;
+    position: fixed;
+    bottom: 20px;
+    width: 1058px;
+    height: 53px;;
+    margin: auto;
+    left: 154px;;
+  }
+  
+  
+  .rupees {
+    position: fixed;
+    background-color: blue;
+    height: 53px;
+    width: 180px;;
+    left: 112px;
+    display: flex;
+  }
+  
+  .rupee {
+    height: 100%;
+  }
+  
+  .rupeeCount {
+    font-size: 50px;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  .selectText {
+    position: fixed;
+    background-color: green;
+    height: 70px;
+    width: 545px;;
+    left: 412px;
+    bottom: 20px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: green;
+  }

@@ -1,0 +1,44 @@
+#cube .inventory {
+    transform-origin: 50vw 0vh 50vw; 
+    backface-visibility: hidden;
+    background-color: blue;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+    border-width: 77px 95px 40px 95px;
+    border-color: black;
+    border-style: outset;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 15px;
+    grid-row-gap: 2px;
+  }
+  
+  .inventoryItem {
+    background-color: red;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .inventoryItem img {
+    width: 100%;
+  }
+  .inventoryItem::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    
+  }
+  
+  .inventoryItem::before:hover {
+    border: 10px dashed white;
+  }
+  
+  .inventoryItem, 
+  .inventoryItem::before {
+    height: 86%;
+    width: 86%;
+  }

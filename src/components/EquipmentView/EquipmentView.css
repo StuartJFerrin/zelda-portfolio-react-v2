@@ -1,0 +1,83 @@
+#cube .equipment  { 
+    transform-origin: 50vw 0vh 50vw; 
+    backface-visibility: hidden;
+    background-color: blue;
+    position: relative;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+  .equipmentBorder {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 20px 20px 20px 0;
+    grid-template-columns: 1fr 380px 1fr 1fr 1fr ;
+    grid-template-rows: 25% 25% 25% 25% ;
+    grid-column-gap: 15px;
+    grid-row-gap: 2px;
+  }
+
+  .equipmentInset {
+    position: absolute;
+    top: 13vh;
+    right: 3vw;
+    height: 80vh;
+    width: 78vw;
+    background-color: black;
+    border-radius: 15px;
+  }
+   
+  .horizontalBar {
+    position: absolute;
+    height: 10vh;
+    width: 35vw;
+    background-color: blue;
+    border-radius: 35px;
+  }
+
+  .bar1 {
+    top: 5.5vh;
+    right: 4vw;
+  }
+  
+  .bar2 {
+    top: 26vh;
+    right: 4vw;
+  }
+
+  .bar3 {
+    top: 45vh;
+    right: 4vw;
+  }
+
+  .bar4 {
+    top: 65vh;
+    right: 4vw;
+  }
+
+  .linkEquipped {
+    background: yellow;
+    grid-row-end: span 4;
+  }
+  
+  .equipmentItem {
+    background-color: red;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .equipmentItem img {
+    width: 60%;
+  }
+  
+  .equipmentItem::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    
+  }
+  

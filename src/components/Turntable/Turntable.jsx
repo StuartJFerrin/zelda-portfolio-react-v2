@@ -17,25 +17,26 @@ class Turntable extends Component {
                 component: EquipmentView,
                 rotationFactor: 0
             },
-            {
-                component: InventoryView,
-                rotationFactor: 270
-            },
-            {
-                component: MapView,
-                rotationFactor: 180
-            },
-            {
-                component: QuestStatusView,
-                rotationFactor: 90
-            },
+            // {
+            //     component: InventoryView,
+            //     rotationFactor: 0
+            // },
+            // {
+            //     component: MapView,
+            //     rotationFactor: 0
+            // },
+            // {
+            //     component: QuestStatusView,
+            //     rotationFactor: 0
+            // },
         ];
     }
     render() {
         const views = this.views.map((view) => {
             return (
                 <div className="center-box" style = {
-                    {transform: "rotateY(" + view.rotationFactor + "deg)"}
+                    {transform: "rotateY(" + view.rotationFactor + "deg)"
+                    } 
                 }>
                 <view.component style={
                     {opacity: ".5"}
@@ -46,7 +47,7 @@ class Turntable extends Component {
         })
 
         return (
-            <div className="center">
+            <div id ="cube">
                 {views}
 
             </div>

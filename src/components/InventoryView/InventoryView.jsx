@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import './InventoryView.css';
 import triforceImg from '../../reference/Triforce.png';
 
 class InventoryView extends Component {
     render() {
         return (
-            <div className="inventory">
+            <figure className="inventory">
                  <div className="inventoryItem">
                     <img src={triforceImg} alt="triforce" />
                 </div>
@@ -77,7 +78,7 @@ class InventoryView extends Component {
                 <div className="inventoryItem">
                     <img src={triforceImg} alt="triforce" />
                 </div>
-            </div>
+            </figure>
         )
     }
 }

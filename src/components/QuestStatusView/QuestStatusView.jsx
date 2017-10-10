@@ -4,9 +4,9 @@ import triforceImg from '../../reference/Triforce.png';
 class QuestStatusView extends Component {
     render() {
         return (
-            <div className="quest">
+            <figure className="quest">
                 hello
-            </div>
+            </figure>
         )
     }
 }
