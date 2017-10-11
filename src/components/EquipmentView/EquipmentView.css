@@ -11,16 +11,26 @@
   .equipmentBorder {
     height: 100%;
     width: 100%;
+    z-index: 0;
+  }
+
+  .equipmentGrid {
+    position: absolute;
+    top: 15vh;
+    left: 4.5vw;
+    right: 4vw;
+    z-index: 2;
     display: grid;
-    padding: 20px 20px 20px 0;
-    grid-template-columns: 1fr 380px 1fr 1fr 1fr ;
-    grid-template-rows: 25% 25% 25% 25% ;
-    grid-column-gap: 15px;
-    grid-row-gap: 2px;
+    padding: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 0vw;
+    grid-row-gap: 2vh;
   }
 
   .equipmentInset {
     position: absolute;
+    z-index: 1;
     top: 13vh;
     right: 3vw;
     height: 80vh;
@@ -60,19 +70,23 @@
   .linkEquipped {
     background: yellow;
     grid-row-end: span 4;
+    margin: 0vh 2.5vw;
+    width: 35vw;
   }
   
   .equipmentItem {
     background-color: red;
     display: inline-block;
-    margin: 0 auto;
+    height: 18vh;
+    width: 11vw;
     position: relative;
+    padding: 1vh 1vw;
   }
   
   .equipmentItem img {
-    width: 60%;
+    width: 100%;
   }
-  
+/*   
   .equipmentItem::before {
     content: "";
     display: block;
@@ -80,4 +94,4 @@
     box-sizing: border-box;
     
   }
-  
+   */

@@ -13,11 +13,14 @@ class EquipmentView extends Component {
                         <div className="horizontalBar bar2"></div>
                         <div className="horizontalBar bar3"></div>
                         <div className="horizontalBar bar4"></div>    
+                    </div>
                     <div className="equipmentBorder">
-                    {/* <div className="equipmentItem"> </div>
+                        </div>
+                        <div className="equipmentGrid">
+                    <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
-                    </div>
-                    <div className="linkEquipped">
+                        </div>
+                        <div className="linkEquipped">
                     </div>
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
@@ -62,9 +65,10 @@ class EquipmentView extends Component {
                         <img src={triforceImg} alt="triforce" />
                     </div>
                     <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" /> */}
+                        <img src={triforceImg} alt="triforce" />
                     </div>
                     </div>
+                    
                 </figure>
                 )
     }
