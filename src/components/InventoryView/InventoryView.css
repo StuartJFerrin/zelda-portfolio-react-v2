@@ -2,43 +2,143 @@
     transform-origin: 50vw 0vh 50vw; 
     backface-visibility: hidden;
     background-color: blue;
-    padding: 10px;
+    position: relative;
     height: 100vh;
     width: 100vw;
-    border-width: 77px 95px 40px 95px;
-    border-color: black;
-    border-style: outset;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-column-gap: 15px;
-    grid-row-gap: 2px;
-  }
-  
-  .inventoryItem {
-    background-color: red;
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .inventoryItem img {
+}
+.inventoryBorder {
+    height: 100%;
     width: 100%;
-  }
-  .inventoryItem::before {
-    content: "";
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-    
-  }
+    z-index: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 11vh;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.inventoryGrid {
+  position: absolute;
+  top: 15vh;
+  left: 11vw;
+  right: 9vw;
+  z-index: 2;
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-column-gap: 0vw;
+  grid-row-gap: 1.5vh;
+}
+
+.inventoryInset {
+  position: absolute;
+  z-index: 1;
+  top: 13vh;
+  right: 9vw;
+  height: 80vh;
+  width: 81vw;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.bar {
+  position: absolute;
+  background-color: blue;
+  border-width: 5px;
+  border-color: blue;
+  border-style: outset;
+} 
+
+.hbar1 {
+  top: 8.5vh;
+  right: 20vw;
+  height: 4vh;
+  width: 17vw;
+}
+
+ .hbar2 {
+  top: 65vh;
+  left: 3vw;
+  height: 10vh;
+  width: 46vw;
+  border-radius: 35px;
+}
+
+.vbar1 {
+  top: 9.5vh;
+  right: 20vw;
+  height: 42vh;
+  width: 2.5vw;
+}
+
+.vbar2 {
+  top: 9.5vh;
+  right: 6.8vw;
+  height: 42vh;
+  width: 2.5vw;
+}
+
+.knob {
+  position: absolute;
+  background-color: blue;
+  height: 12vh;
+  width: 6vw;
+  border-width: 5px;
+  border-color: blue;
+  border-style: outset;
+  border-radius: 35px;
+}
+
+.knob1 {
+  top: 5.5vh;
+  right: 32vw;
+}
+
+.knob2 {
+  top: 5.5vh;
+  right: 18.3vw;
+}
+
+.knob3 {
+  top: 26vh;
+  right: 18.3vw;
+}
+
+.knob4 {
+  top: 46vh;
+  right: 18.3vw;
+}
+
+.knob5 {
+  top: 5.5vh;
+  right: 5.3vw;
+}
+
+.knob6 {
+  top: 26vh;
+  right: 5.3vw;
+}
+
+.knob7 {
+  top: 46vh;
+  right: 5.3vw;
+}
   
-  .inventoryItem::before:hover {
-    border: 10px dashed white;
-  }
-  
-  .inventoryItem, 
-  .inventoryItem::before {
-    height: 86%;
-    width: 86%;
-  }
+.inventoryItem {
+  background-color: red;
+  display: inline-block;
+  height: 18vh;
+  width: 11vw;
+  position: relative;
+  padding: 1vh 1vw;
+}
+
+.inventoryItem img {
+  height: 16vh;
+  width: 9vw;
+}

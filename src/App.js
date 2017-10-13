@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import inventoryReference from './reference/inventory.png';
 import EquipmentImg from './reference/equipment.png';
-import EquipmentFull from './reference/equipmentFull.png'
+import EquipmentFull from './reference/equipmentFull.png';
+import InventoryFull from './reference/inventoryFull.jpg';
 import './App.css';
 import Controls from './components/Controls/Controls.jsx';
 import Turntable from './components/Turntable/Turntable.jsx';
@@ -16,7 +17,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <img className="reference" src={EquipmentFull} alt="blah" />
+        {/* <img className="reference" src={InventoryFull} alt="blah" /> */}
         {/* <Controls /> */}
         <div className="container">
             {/* <div className="leftZArrow"> */}

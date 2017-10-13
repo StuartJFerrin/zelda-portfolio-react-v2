@@ -15,7 +15,8 @@ class EquipmentView extends Component {
                         <div className="horizontalBar bar4"></div>    
                     </div>
                     <div className="equipmentBorder">
-                        </div>
+                    <div className="title">Equipment</div> 
+                    </div>
                         <div className="equipmentGrid">
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
