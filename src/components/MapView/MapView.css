@@ -1,10 +1,15 @@
 #cube .mapView {
     transform-origin: 50vw 0vh 50vw; 
     backface-visibility: hidden;
-    background-color: blue;
+    background-color: #652C29;
+    position: relative;
     height: 100vh;
     width: 100vw;
-    border-width: 77px 40px 40px 40px;
-    border-color: red;
-    border-style: outset;
-  }
+}
+.mapBorder {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color:black;
+    -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
+ }

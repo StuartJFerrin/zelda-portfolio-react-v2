@@ -17,7 +17,7 @@ class EquipmentView extends Component {
                     <div className="equipmentBorder">
                     <div className="title">Equipment</div> 
                     </div>
-                        <div className="equipmentGrid">
+                        {/* <div className="equipmentGrid">
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
                         </div>
@@ -67,8 +67,8 @@ class EquipmentView extends Component {
                     </div>
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
-                    </div>
-                    </div>
+                    </div> */}
+                    {/* </div> */}
                     
                 </figure>
                 )

@@ -1,7 +1,7 @@
 #cube .inventory {
     transform-origin: 50vw 0vh 50vw; 
     backface-visibility: hidden;
-    background-color: blue;
+    background-color: #193852;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -10,7 +10,9 @@
     height: 100%;
     width: 100%;
     z-index: 0;
-}
+    background-color:black;
+    -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
+ }
 
 .title {
   display: flex;
@@ -48,9 +50,9 @@
 
 .bar {
   position: absolute;
-  background-color: blue;
+  background-color:#193852;
   border-width: 5px;
-  border-color: blue;
+  border-color: #193852;
   border-style: outset;
 } 
 
@@ -85,11 +87,11 @@
 
 .knob {
   position: absolute;
-  background-color: blue;
+  background-color: #193852;
   height: 12vh;
   width: 6vw;
   border-width: 5px;
-  border-color: blue;
+  border-color: #193852;
   border-style: outset;
   border-radius: 35px;
 }

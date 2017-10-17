@@ -1,8 +1,190 @@
 #cube .quest {
-    transform-origin: 50vw 0vh 50vw; 
-    backface-visibility: hidden;
-    background-color: brown;
-    height: 100vh;
-    width: 100vw;
+  transform-origin: 50vw 0vh 50vw; 
+  backface-visibility: hidden;
+  background-color: #353613;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.questBorder {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color:gray;
+  -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
+}
+
+.title {
+display: flex;
+justify-content: center;
+font-family: sans-serif;
+font-size: 11vh;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.questGrid {
+  position: absolute;
+  top: 11vh;
+  left: 4vw;
+  right: 6vw;
+  z-index: 2;
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 37vh 26vh 20vh;
+  grid-column-gap: 0vw;
+  grid-row-gap: 1vh;
+}
+
+.topLeftArea {
+  background: orange;
+}
+.medallionArea {
+  background: yellow;
+  grid-row-end: span 2;
+  margin-left: 6.5vw;
+}
+
+.noteArea {
+  background: pink;;
+}
+
+.staffArea {
+  background: purple;
   
+  
+}
+
+.trebleStaff {
+  height: 100%;
+  width: 104%;
+  padding-top: 3.5vh;
+  padding-bottom: 4.6vh;
+  position: relative;
+}
+
+.trebleClef {
+  height: 100%;
+  position: absolute;
+  height: 18vh;
+  left: 1.4vw;
+}
+
+.stoneArea {
+  background: green;
+  margin-left: 6.5vw;
+}
+
+.inventoryItem {
+background-color: red;
+display: inline-block;
+height: 18vh;
+width: 11vw;
+position: relative;
+padding: 1vh 1vw;
+}
+
+.inventoryItem img {
+height: 16vh;
+width: 9vw;
+}
+
+.outerHex {
+  height: 76vh;
+  width: 68vw;
+  position: absolute;
+  top: -7vh;
+  right: -12.3vw;
+ }
+ 
+ .innerHex {
+  height: 50vh;
+  width: 45vw;
+  position: absolute;
+  top: 6vh;
+  right: -1vw;
+ }
+ 
+ .triforce {
+  height: 14%;
+  width: 14%;
+  position: absolute;
+  mask-image: url("http://www.clker.com/cliparts/a/r/C/L/q/z/green-box-hi.png");
+  -webkit-mask-box-image: url("http://www.clker.com/cliparts/a/r/C/L/q/z/green-box-hi.png");
+  filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  z-index: 3;
+ }
+ 
+ .tri1 {
+  top: 19vh;
+  right: 17.8vw;
+ }
+ 
+ .tri2 {
+  top: 28vh;
+  right: 20.7vw;
+ }
+ 
+ .tri3 {
+  top: 28vh;
+  right: 14.8vw;
+ }
+ 
+ .image-container{
+  width: 39vw;
+  height: 61vh;
+  background-size: 100%;
+  position: absolute;
+  filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  z-index: 3;
+  }
+  .wrap-image{
+  mask-image: url("http://i.imgur.com/9Xo9L4Z.png");
+  -webkit-mask-box-image: url("http://i.imgur.com/9Xo9L4Z.png");
+  }
+ 
+
+  .medallion {
+    height: 22%;
+    width: 22%;
+    position: absolute;
+  }
+
+  .light {
+    top: 4vh;
+    left: 14vw;  
+  }
+
+  .forest {
+    top: 14vh;
+    left: 25.5vw;   
+  }
+
+  .fire {
+    top: 34vh;
+    left: 25.5vw;   
+  }
+
+  .water {
+    top: 44vh;
+    left: 14vw; 
+  }
+
+  .spirit {
+    top: 34vh;
+    left: 2.5vw;
+  }
+
+  .shadow {
+    top: 14vh;
+    left: 2.5vw;   
   }
