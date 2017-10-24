@@ -49,24 +49,48 @@ text-transform: uppercase;
   grid-row-gap: 1vh;
 }
 
+.item1 {
+  border-style: inset;
+  border-width: 5px;
+  margin: 3vh 2vw .5vh 1vw;
+  border-radius: 20px;
+  border-color: #5A5B31;
+}
+
 .picArea {
   grid-row-end: span 2;
   grid-column-end: span 2;
-  background: red;
+  /* background: red; */
 }
 
+.headshot {
+  width: auto;
+  position: relative;
+  height: auto;
+  max-width: 18vw;
+  max-height: 35vh;
+  left: 3vw;
+  border-style: inset;
+  border-radius: 75px;
+  border-color: #5A5B31;
+}
 .gitArea {
   grid-column-end: span 2;
+  border-style: inset;
+  border-width: 5px;
+  margin: 1vh 2vw 2.5vh 1vw;
+  border-radius: 20px;
+  border-color: #5A5B31;
 }
 
 .medallionArea {
-  background: yellow;
+  /* background: yellow; */
   grid-row-end: span 2;
   margin-left: 6.5vw;
 }
 
 .noteArea {
-  background: pink;
+  /* background: pink; */
   position: relative;
   z-index: 2;
   display: grid;
@@ -77,8 +101,15 @@ text-transform: uppercase;
   grid-row-gap: 1vh;
 }
 
+.note {
+  position: relative;
+  width: 4vw;
+  top: 2vh;
+  left: 1vw;
+}
+
 .staffArea {
-  background: purple;
+  /* background: purple; */
   
   
 }
@@ -99,7 +130,7 @@ text-transform: uppercase;
 }
 
 .stoneArea {
-  background: green;
+  /* background: green; */
   margin-left: 6.5vw;
 }
 
@@ -227,10 +258,17 @@ width: 9vw;
     right: 1vw;
     height: 16vh;
     width: 36vw;
+    padding: 5px 2vw;
     border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
   } 
 
   .bStoneBar {
     background-color: #3A3B1F;
     -webkit-mask-image: none;
+  }
+
+  .stone {
+    width: 8vw;
   }
