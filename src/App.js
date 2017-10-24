@@ -18,7 +18,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* <img className="reference" src={QuestFull} alt="blah" /> */}
+        <img className="reference" src={QuestFull} alt="blah" />
         {/* <Controls /> */}
         <div className="container">
             {/* <div className="leftZArrow"> */}

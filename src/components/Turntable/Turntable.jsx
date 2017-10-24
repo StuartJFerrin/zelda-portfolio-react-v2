@@ -13,10 +13,10 @@ class Turntable extends Component {
         }
         this.views = [
             
-            {
-                component: EquipmentView,
-                rotationFactor: 0
-            },
+            // {
+            //     component: EquipmentView,
+            //     rotationFactor: 0
+            // },
             // {
             //     component: InventoryView,
             //     rotationFactor: 0
@@ -25,10 +25,10 @@ class Turntable extends Component {
             //     component: MapView,
             //     rotationFactor: 0
             // },
-            // {
-            //     component: QuestStatusView,
-            //     rotationFactor: 0
-            // },
+            {
+                component: QuestStatusView,
+                rotationFactor: 0
+            },
         ];
     }
     render() {

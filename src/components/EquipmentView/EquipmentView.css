@@ -3,19 +3,19 @@
 #cube .equipment  { 
     transform-origin: 50vw 0vh 50vw; 
     backface-visibility: hidden;
-    background-color: #082017;
+    background-color: #081910;
     position: relative;
     height: 100vh;
     width: 100vw;
    
-}
+  }
 
  
   .equipmentBorder {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background-color: darkslategray;
+    background-color: #3F4B29;
      -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
   }
 
@@ -57,9 +57,14 @@
     position: absolute;
     height: 10vh;
     width: 35vw;
-    background-color: #16302B;
+    background-color: #3F4B29;
     -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
     border-radius: 35px;
+  }
+
+  .backgroundBar {
+    background-color: #081910;
+    -webkit-mask-image: none;
   }
 
   .bar1 {
@@ -111,3 +116,39 @@
     
   }
    */
+
+   .box {
+    position: absolute;
+    height: 15vh;
+    width: 10vw;
+    background-color: #3F4B29;
+    -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
+    border-radius: 5px;
+    border-style: outset;
+    border-color: #081910;
+  }
+
+  /* .backgroundBar {
+    background-color: #081910;
+    -webkit-mask-image: none;
+  } */
+
+  .box1 {
+    top: 5.5vh;
+    left: -13.5vw;
+  }
+
+  .box2 {
+    top: 23.5vh;
+    left: -13.5vw;
+  }
+
+  .box3 {
+    top: 43.5vh;
+    left: -13.5vw;
+  }
+
+  .box4 {
+    top: 62.5vh;
+    left: -13.5vw;
+  }

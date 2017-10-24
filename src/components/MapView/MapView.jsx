@@ -6,7 +6,9 @@ class MapView extends Component {
     render() {
         return (
             <figure className="mapView">
+                <div className="mapBorder">
                 <img className="map" src={MapImg} alt="map" />
+            </div>
             </figure>
         )
     }

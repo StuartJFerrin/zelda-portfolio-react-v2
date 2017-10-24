@@ -9,10 +9,22 @@ class EquipmentView extends Component {
         return (
                 <figure className="equipment">
                     <div className="equipmentInset">
+                        <div className="horizontalBar  backgroundBar bar1"></div>
                         <div className="horizontalBar bar1"></div>
+                        <div className="horizontalBar  backgroundBar bar2"></div>
                         <div className="horizontalBar bar2"></div>
+                        <div className="horizontalBar backgroundBar bar3"></div>
                         <div className="horizontalBar bar3"></div>
+                        <div className="horizontalBar backgroundBar bar4"></div>
                         <div className="horizontalBar bar4"></div>    
+                        <div className="box backgroundBar box1"></div>
+                        <div className="box box1"></div>  
+                        <div className="box backgroundBar box2"></div>
+                        <div className="box box2"></div> 
+                        <div className="box backgroundBar box3"></div>
+                        <div className="box box3"></div> 
+                        <div className="box backgroundBar box4"></div>
+                        <div className="box box4"></div> 
                     </div>
                     <div className="equipmentBorder">
                     <div className="title">Equipment</div> 

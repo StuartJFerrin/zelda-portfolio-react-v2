@@ -1,7 +1,7 @@
 #cube .quest {
   transform-origin: 50vw 0vh 50vw; 
   backface-visibility: hidden;
-  background-color: #353613;
+  background-color: #3A3B1F;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -10,7 +10,7 @@
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-color:gray;
+  background-color:#5A5B31;
   -webkit-mask-image: url('https://www.transparenttextures.com/patterns/white-plaster.png');
 }
 
@@ -32,14 +32,33 @@ text-transform: uppercase;
   display: grid;
   padding: 0px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 37vh 26vh 20vh;
+  grid-template-rows: 35vh 28vh 20vh;
   grid-column-gap: 0vw;
   grid-row-gap: 1vh;
 }
 
 .topLeftArea {
   background: orange;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0vw;
+  grid-row-gap: 1vh;
 }
+
+.picArea {
+  grid-row-end: span 2;
+  grid-column-end: span 2;
+  background: red;
+}
+
+.gitArea {
+  grid-column-end: span 2;
+}
+
 .medallionArea {
   background: yellow;
   grid-row-end: span 2;
@@ -47,7 +66,15 @@ text-transform: uppercase;
 }
 
 .noteArea {
-  background: pink;;
+  background: pink;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  padding: 0px 0px 0px 1.5vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1vh;
 }
 
 .staffArea {
@@ -91,19 +118,19 @@ width: 9vw;
 }
 
 .outerHex {
-  height: 76vh;
-  width: 68vw;
+  height: 68vh;
+  width: 39vw;
   position: absolute;
-  top: -7vh;
-  right: -12.3vw;
+  top: -1vh;
+  right: 0vw;
  }
  
  .innerHex {
-  height: 50vh;
-  width: 45vw;
+  height: 46vh;
+  width: 25vw;
   position: absolute;
-  top: 6vh;
-  right: -1vw;
+  top: 10vh;
+  right: 7vw;
  }
  
  .triforce {
@@ -121,18 +148,18 @@ width: 9vw;
  }
  
  .tri1 {
-  top: 19vh;
-  right: 17.8vw;
+  top: 21vh;
+  right: 16.8vw;
  }
  
  .tri2 {
-  top: 28vh;
-  right: 20.7vw;
+  top: 30vh;
+  right: 19.7vw;
  }
  
  .tri3 {
-  top: 28vh;
-  right: 14.8vw;
+  top: 30vh;
+  right: 13.9vw;
  }
  
  .image-container{
@@ -154,8 +181,8 @@ width: 9vw;
  
 
   .medallion {
-    height: 22%;
-    width: 22%;
+    height: 25%;
+    width: 25%;
     position: absolute;
   }
 
@@ -170,7 +197,7 @@ width: 9vw;
   }
 
   .fire {
-    top: 34vh;
+    top: 35vh;
     left: 25.5vw;   
   }
 
@@ -180,11 +207,30 @@ width: 9vw;
   }
 
   .spirit {
-    top: 34vh;
+    top: 35vh;
     left: 2.5vw;
   }
 
   .shadow {
     top: 14vh;
     left: 2.5vw;   
+  }
+
+  .stoneBar {
+    position: absolute;
+    background-color: #5A5B31;
+    border-width: 5px;
+    border-color: #5A5B31;
+    border-style: outset;
+    -webkit-mask-image: url(https://www.transparenttextures.com/patterns/white-plaster.png);
+    bottom: 2vh;
+    right: 1vw;
+    height: 16vh;
+    width: 36vw;
+    border-radius: 50px;
+  } 
+
+  .bStoneBar {
+    background-color: #3A3B1F;
+    -webkit-mask-image: none;
   }
