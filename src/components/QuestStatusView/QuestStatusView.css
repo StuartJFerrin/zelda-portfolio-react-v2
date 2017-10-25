@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 #cube .quest {
   transform-origin: 50vw 0vh 50vw; 
   backface-visibility: hidden;
@@ -38,7 +40,7 @@ text-transform: uppercase;
 }
 
 .topLeftArea {
-  background: orange;
+  /* background: orange; */
   position: relative;
   z-index: 2;
   display: grid;
@@ -81,6 +83,24 @@ text-transform: uppercase;
   margin: 1vh 2vw 2.5vh 1vw;
   border-radius: 20px;
   border-color: #5A5B31;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.gitLogo {
+  position: relative;
+  width: 7vw;
+  height: 12vh;
+  left: 1vw;
+
+}
+
+.gitCount {
+  font-size: 4em;
+  color: white;
+  letter-spacing: 15px;
+  font-family: 'Lobster', cursive;
 }
 
 .medallionArea {
@@ -106,6 +126,8 @@ text-transform: uppercase;
   width: 4vw;
   top: 2vh;
   left: 1vw;
+  -webkit-filter: drop-shadow(7px 7px 3px #000000);
+  filter: drop-shadow(7px 7px 3px #000000);
 }
 
 .staffArea {
@@ -271,4 +293,5 @@ width: 9vw;
 
   .stone {
     width: 8vw;
+    -webkit-mask-image: none;
   }

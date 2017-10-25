@@ -18,9 +18,11 @@ class QuestStatusView extends Component {
                         <div className="item1"></div>
                         <div className="item1"></div>
                         <div className="picArea"> <img className="headshot" src="https://static.zerochan.net/Link.%28Breath.of.the.Wild%29.full.2009958.jpg" /> </div>
-                        <div className="gitArea">50</div>
+                        <div className="gitArea">
+                            <img className="gitLogo" src="https://maxcdn.icons8.com/Share/icon/p1em/Logos//github1600.png" />
+                            <div className="gitCount">80</div>
+                        </div>
                     </div>
-
                     <div className="medallionArea">
                         <div className="image-container">
                             <img className="wrap-img outerHex" src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpMk1YS1c1bWxfenM" />
