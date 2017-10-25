@@ -15,8 +15,12 @@ class QuestStatusView extends Component {
                 </div>
                 <div className="questGrid">
                     <div className="topLeftArea">
-                        <div className="item1"></div>
-                        <div className="item1"></div>
+                        <div className="item1">
+                            <img className="item2" src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpLUwyanl0VF83VDQ" />
+                        </div>
+                        <div className="item1">
+                            <img className="item2" src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpcFlkV3dVaXJIU0U" />
+                        </div>
                         <div className="picArea"> <img className="headshot" src="https://static.zerochan.net/Link.%28Breath.of.the.Wild%29.full.2009958.jpg" /> </div>
                         <div className="gitArea">
                             <img className="gitLogo" src="https://maxcdn.icons8.com/Share/icon/p1em/Logos//github1600.png" />

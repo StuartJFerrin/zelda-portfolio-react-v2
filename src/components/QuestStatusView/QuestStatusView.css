@@ -59,6 +59,10 @@ text-transform: uppercase;
   border-color: #5A5B31;
 }
 
+.item2 {
+  padding: 9px 20px
+}
+
 .picArea {
   grid-row-end: span 2;
   grid-column-end: span 2;
@@ -99,6 +103,7 @@ text-transform: uppercase;
 .gitCount {
   font-size: 4em;
   color: white;
+  padding: 16px;
   letter-spacing: 15px;
   font-family: 'Lobster', cursive;
 }
