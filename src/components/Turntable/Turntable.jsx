@@ -17,18 +17,18 @@ class Turntable extends Component {
             //     component: EquipmentView,
             //     rotationFactor: 0
             // },
-            // {
-            //     component: InventoryView,
-            //     rotationFactor: 0
-            // },
+            {
+                component: InventoryView,
+                rotationFactor: 0
+            },
             // {
             //     component: MapView,
             //     rotationFactor: 0
             // },
-            {
-                component: QuestStatusView,
-                rotationFactor: 0
-            },
+            // {
+            //     component: QuestStatusView,
+            //     rotationFactor: 0
+            // },
         ];
     }
     render() {

@@ -29,14 +29,23 @@ class EquipmentView extends Component {
                     <div className="equipmentBorder">
                     <div className="title">Equipment</div> 
                     </div>
-                        {/* <div className="equipmentGrid">
+                        <div className="equipmentGrid">
                     <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" />
+                        <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpREZyWFg2amIyR0E" alt="triforce" />
                         </div>
                         <div className="linkEquipped">
                     </div>
                     <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" />
+                        <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpSFNiTlE3MXRwdXc" alt="triforce" />
+                    </div>
+                    <div className="equipmentItem">
+                        <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpTTVTdWF1ZG5Ya2c" alt="triforce" />
+                    </div>
+                    <div className="equipmentItem">
+                        <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpbTdjTkk4QlZqNWc" alt="triforce" />
+                    </div>
+                    <div className="equipmentItem">
+                        <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpNkc5RmJZWE9SMGs" alt="triforce" />
                     </div>
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
@@ -71,16 +80,7 @@ class EquipmentView extends Component {
                     <div className="equipmentItem">
                         <img src={triforceImg} alt="triforce" />
                     </div>
-                    <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" />
                     </div>
-                    <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" />
-                    </div>
-                    <div className="equipmentItem">
-                        <img src={triforceImg} alt="triforce" />
-                    </div> */}
-                    {/* </div> */}
                     
                 </figure>
                 )

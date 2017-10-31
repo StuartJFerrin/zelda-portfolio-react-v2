@@ -34,76 +34,76 @@ class InventoryView extends Component {
                         <div className="title">Select Item</div> 
                         </div>
                         <div className="inventoryGrid"> <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpRmtGMDZQaEJzc1U" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpTUNWWWd6V2xRWFU" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpZlFMVWszRC10NVk" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpaFNPWDZ4RUNZVjA" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpU0MzVlRSb0tKcWM" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpaGRSaGFHTnRjYzg" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpWmtZeFBNX3ZyZW8" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpVENKVmxyd1lQY0E" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpOU1WUjlsUWhzVUk" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpMnZwQmFVY1pNTVU" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpaU9lU2xzZjV0NGM" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpOXZpUnZjSjRWcmM" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpQVZscW9HOVRUVUE" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpVEZ2SnIyTTJUMHc" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpZUxoVC1GcFMzcEU" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpSnpVNDh0QVV4Q1k" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0Ppd1MtZnk3S0Q3N1k" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpcWl4NXNHcnR3bDQ" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpVjY5eGNObElwZWs" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0Ppa1FEdkpJMU04M2M" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpcThpeVVfaFQ3VTg" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpV2NPQU9VNnZ1TTg" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpNjBKVGU5WGE3QW8" alt="triforce" />
                 </div>
                 <div className="inventoryItem">
-                    <img src={triforceImg} alt="triforce" />
+                    <img src="https://drive.google.com/uc?id=0Bx7SfLbHi0PpTWFjdWRmNDZtTjA" alt="triforce" />
                 </div>
                 </div>
             </figure>

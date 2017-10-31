@@ -60,7 +60,7 @@ text-transform: uppercase;
 }
 
 .item2 {
-  padding: 9px 20px
+  padding: 0px 13px
 }
 
 .picArea {
@@ -103,7 +103,7 @@ text-transform: uppercase;
 .gitCount {
   font-size: 4em;
   color: white;
-  padding: 16px;
+  padding: 6px;
   letter-spacing: 15px;
   font-family: 'Lobster', cursive;
 }
@@ -124,6 +124,7 @@ text-transform: uppercase;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 2vw;
   grid-row-gap: 1vh;
+  
 }
 
 .note {
@@ -136,7 +137,7 @@ text-transform: uppercase;
 }
 
 .staffArea {
-  /* background: purple; */
+  -webkit-mask-image: url(https://www.transparenttextures.com/patterns/white-plaster.png);
   
   
 }
@@ -162,7 +163,6 @@ text-transform: uppercase;
 }
 
 .inventoryItem {
-background-color: red;
 display: inline-block;
 height: 18vh;
 width: 11vw;
@@ -195,7 +195,6 @@ width: 9vw;
   height: 14%;
   width: 14%;
   position: absolute;
-  mask-image: url("http://www.clker.com/cliparts/a/r/C/L/q/z/green-box-hi.png");
   -webkit-mask-box-image: url("http://www.clker.com/cliparts/a/r/C/L/q/z/green-box-hi.png");
   filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
   -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
@@ -233,7 +232,6 @@ width: 9vw;
   z-index: 3;
   }
   .wrap-image{
-  mask-image: url("http://i.imgur.com/9Xo9L4Z.png");
   -webkit-mask-box-image: url("http://i.imgur.com/9Xo9L4Z.png");
   }
  
@@ -297,6 +295,19 @@ width: 9vw;
   }
 
   .stone {
-    width: 8vw;
+    position: absolute;
+    width: 6.5vw;
     -webkit-mask-image: none;
+    bottom: 3vh;
+  }
+  .greenStone {
+    right: 26vw;
+  }
+  
+  .redStone {
+    right: 15.6vw;
+  }
+
+  .blueStone {
+    right: 5vw;
   }
